@@ -9,7 +9,7 @@ All my code for this new project.
 1. HTML
   - semantic html
   - validate the colde
-2.CSS
-3.JavaScript
+2. CSS
+3. JavaScript
 
 ## Bug list
