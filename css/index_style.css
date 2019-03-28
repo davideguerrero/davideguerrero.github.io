@@ -2,3 +2,66 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  margin-top: 5em;
+
+  text-transform: uppercase;
+}
+
+/* @font-face {
+  font-family: "Gotham Pro";
+  src: url("/gotham_pro/GothaProBol.woff");
+} */
+
+/*  HEADER */
+
+header {
+  display: flex;
+  flex-flow: row;
+
+  position: fixed;
+}
+
+.logo {
+  
+}
+
+h1 {
+  margin: 0;
+  
+  line-height: 1em;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin: 5em 5em 0 0;
+  padding-top: 100vh;
+  padding-right: 2em;
+
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+
+  border-right: .05em solid #000;
+}
+
+a {
+  padding-top: 5em;
+
+  text-decoration: none;
+}
+
+/* MAIN */
+
+h2 {
+  
+}
+
+/* FOOTER */
