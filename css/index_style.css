@@ -5,10 +5,11 @@
 body {
   display: flex;
   flex-flow: column;
-  align-items: center;
 
-  margin-top: 5em;
+  margin: 5em 0 0 15em;
 
+  font-family: sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -22,16 +23,20 @@ body {
 header {
   display: flex;
   flex-flow: row;
+  align-items: flex-end;
 
   position: fixed;
 }
 
 .logo {
-  
+  width: 15em;
+  height: 7.5em;
+
+  background-color: #00f;
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 -.15em 1em;
   
   line-height: 1em;
 }
@@ -53,15 +58,154 @@ nav {
 }
 
 a {
-  padding-top: 5em;
-
   text-decoration: none;
+  
+  color: #00f;
+}
+
+.nav-link {
+  padding-top: 5em;
 }
 
 /* MAIN */
 
+.projects {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  margin-top: 22.5em;
+}
+
 h2 {
+  margin: 0;
+  padding: .125em 2em .125em .5em;
   
+  font-size: 3em;
+  
+  color: #fff;
+  background-color: #000;
+}
+
+.subtitle {
+  margin-bottom: 0;
+
+  color: #000;
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 7.5em;
+}
+
+.projects-img {
+  width: 45em;
+  height: 25em;
+
+  background-color: #00f;
+}
+
+.project-info {
+  margin-left: 2em;
+}
+
+h3 {
+ margin-top: -.125em;
+}
+
+span {
+  font-weight: lighter;
+}
+
+p {
+  color: #7f7f7f;
+}
+
+.projects-link {
+  /* margin-top: 5em; */
+  padding: .40em 2em .25em .5em;
+
+  color: #fff;
+  background-color: #00f;
+}
+
+/* .projects-link .right {
+  padding: .40em .5em .25em 2em;
+} */
+
+.project-right {
+  text-align: right;
+}
+.order {
+  margin-right: 2em;
+  order: -1;
+}
+
+.behance-link {
+  margin: 6.5em 0 13em 0;
+
+  color: #7f7f7f;
 }
 
 /* FOOTER */
+
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.contact-links {
+  margin-top: 7.5em;
+
+  line-height: .25em;
+}
+
+.location {
+  color: #7f7f7f;
+}
+
+.copy {
+  margin: 15em 0 .25em 0;
+}
+
+/* COLUMNS */
+
+h2,
+.subtitle,
+.behance-link {
+  margin-left: 112.5px;
+}
+
+.contact-links,
+.copy {
+  margin-left: 225px;
+}
+
+/* HOVER */
+
+.logo:hover {
+  background-color: #000;
+}
+
+.nav-link:hover {
+  color: #000;
+  border-left: .1em solid #00f;
+}
+
+.projects-link:hover {
+  background-color: #000;
+}
+
+.social-link:hover {
+  color: #000;
+  border-bottom: .1em solid #00f;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 0px) {
+
+}
