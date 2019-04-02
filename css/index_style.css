@@ -37,6 +37,7 @@ header {
   height: 7.5em;
 
   background-color: #00f;
+  /* background-image: url(); */
 }
 
 h1 {
@@ -87,7 +88,7 @@ a {
 
 h2 {
   margin: 0;
-  padding: .125em 2em .125em .5em;
+  padding: .3em 2em .125em .5em;
   
   font-size: 5em;
   
@@ -121,8 +122,7 @@ article {
 }
 
 h3 {
- margin-top: -.05
- em;
+ margin-top: -.05em;
 
  font-size: 2.5em;
 }
@@ -157,6 +157,7 @@ p {
 .project-right {
   text-align: right;
 }
+
 .order {
   margin-right: 2em;
   order: -1;
@@ -180,7 +181,7 @@ footer {
 }
 
 .contact-links {
-  margin-top: 7.5em;
+  margin-top: 10em;
   
   font-size: .80em;
   line-height: .25em;
@@ -211,6 +212,7 @@ h2,
 
 .logo:hover {
   background-color: #000;
+  /* background-image: url(); */
 }
 
 .nav-link:hover {
@@ -218,14 +220,13 @@ h2,
   border-left: .1em solid #00f;
 }
 
-.projects-link_right:hover,
-.projects-link:hover {
+.projects-link:hover,
+.projects-link_right:hover {
   background-color: #000;
 }
 
 .social-link:hover {
   color: #000;
-  border-bottom: .1em solid #00f;
 }
 
 /* MEDIA QUERIES */
@@ -233,3 +234,10 @@ h2,
 @media (max-width: 0px) {
 
 }
+
+/* ==========================================
+=============================================
+ABOUT
+=============================================
+========================================== */
+

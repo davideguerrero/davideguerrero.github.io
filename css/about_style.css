@@ -2,3 +2,214 @@
   box-sizing: border-box;
 }
 
+body {
+  margin-top: 5em;
+
+  font-family: 'Gotham Pro', 'Helvetica', 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* CONTAINER */
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*  HEADER */
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  width: 1000px;
+  position: fixed;
+}
+
+.logo {
+  width: 15em;
+  height: 7.5em;
+
+  background-color: #00f;
+  /* background-image: url(); */
+}
+
+h1 {
+  margin: 0 0 -.15em 1em;
+  
+  line-height: 1em;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  margin: 5em 5em 0 0;
+  padding-top: 100vh;
+
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  
+  border-right: .1em solid #000;
+}
+
+/* LINKS */
+
+a,
+a:link,
+a:visited {
+  padding-right: 2em;
+
+  font-size: 1.5em;
+  text-decoration: none;
+  
+  color: #00f;
+}
+
+a:hover {
+  color: #000;
+}
+
+.nav-link {
+  padding-top: 5em;
+
+  border-left: .1em solid transparent;
+}
+
+/* MAIN */
+
+.biography {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  margin-top: 28.5em;
+}
+
+h2 {
+  margin: 0;
+  padding: .3em 2em .125em .5em;
+  
+  font-size: 5em;
+  
+  color: #fff;
+  background-color: #000;
+}
+
+.name {
+  margin-left: 0;
+  padding: 0 .5em .125em 1.35em;
+  
+  text-align: right;
+
+  color: #000;
+  background-color: #fff;
+}
+
+.subtitle {
+  margin-bottom: 0;
+
+  font-size: 1.5em;
+  color: #000;
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 7.5em;
+  margin-bottom: 20em;
+}
+
+.personal-info {
+  margin-left: 2em;
+}
+
+.paragraph {
+  margin-left: 0;
+
+  font-size: 1.5em;
+  color: #000;
+}
+
+h3 {
+  margin-top: 0;
+ 
+  font-size: 2.5em;
+  color: #7f7f7f;
+ }
+
+span {
+  font-weight: lighter;
+}
+
+ p {
+  font-size: 1.5em;
+  color: #7f7f7f;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+
+  margin-left: -105px;
+}
+
+.contact-links {
+  margin-top: 12em;
+  margin-bottom: 20em;
+  
+  font-size: .80em;
+  line-height: .25em;
+}
+
+.behance {
+  display: flex;
+  align-items: baseline;
+
+  border-bottom: .1em solid transparent;
+}
+
+.copy {
+  margin: 0 0 .25em 0;
+}
+
+/* COLUMNS */
+
+h2,
+.subtitle {
+  margin-left: 112.5px;
+}
+
+.contact-links,
+.copy {
+  margin-left: 225px;
+}
+
+/* HOVER */
+
+.logo:hover {
+  background-color: #000;
+  /* background-image: url(); */
+}
+
+.nav-link:hover {
+  border-left: .1em solid #00f;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 0px) {
+
+}
