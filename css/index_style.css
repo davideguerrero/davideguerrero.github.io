@@ -35,9 +35,6 @@ header {
 .logo {
   width: 15em;
   height: 7.5em;
-
-  background-color: #00f;
-  /* background-image: url(); */
 }
 
 h1 {
@@ -111,8 +108,8 @@ article {
 }
 
 .project-img {
-  width: 45em;
-  height: 25em;
+  min-width: 45em;
+  min-height: 30em;
 
   background-color: #00f;
 }
@@ -136,8 +133,8 @@ p {
   color: #7f7f7f;
 }
 
-.projects-link {
-  padding: .40em 2em .25em .5em;
+.project-link {
+  padding: .8em 2em .25em .5em;
 
   font-size: 1.25em;
   
@@ -145,8 +142,8 @@ p {
   background-color: #00f;
 }
 
-.projects-link_right {
-  padding: .40em .5em .25em 2em;
+.project-link_right {
+  padding: .8em .5em .25em 2em;
   
   font-size: 1.25em;
   
@@ -164,7 +161,7 @@ p {
 }
 
 .behance-link {
-  margin: 3.25em 0 8em 0;
+  margin: 3.25em 0 11em 0;
 
   font-size: 2em;
   color: #7f7f7f;
@@ -177,11 +174,11 @@ footer {
   flex-flow: column;
   align-items: flex-start;
 
-  margin-left: -175px;
+  margin-left: -155px;
 }
 
-.contact-links {
-  margin-top: 10em;
+.contact-link {
+  margin-top: 12em;
   
   font-size: .80em;
   line-height: .25em;
@@ -200,28 +197,23 @@ footer {
 h2,
 .subtitle,
 .behance-link {
-  margin-left: 112.5px;
+  margin-left: 150px;
 }
 
-.contact-links,
+.contact-link,
 .copy {
-  margin-left: 225px;
+  margin-left: 300px;
 }
 
 /* HOVER */
-
-.logo:hover {
-  background-color: #000;
-  /* background-image: url(); */
-}
 
 .nav-link:hover {
   color: #000;
   border-left: .1em solid #00f;
 }
 
-.projects-link:hover,
-.projects-link_right:hover {
+.project-link:hover,
+.project-link_right:hover {
   background-color: #000;
 }
 
@@ -234,10 +226,3 @@ h2,
 @media (max-width: 0px) {
 
 }
-
-/* ==========================================
-=============================================
-ABOUT
-=============================================
-========================================== */
-

@@ -35,8 +35,8 @@ header {
   width: 15em;
   height: 7.5em;
 
-  background-color: #00f;
-  /* background-image: url(); */
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -142,7 +142,7 @@ article {
   margin-bottom: 5em;
 
   width: 45em;
-  height: 25em;
+  height: 30em;
 
   background-color: #00f;
 }
@@ -194,17 +194,11 @@ h2,
   margin-left: 112.5px;
 }
 
-.contact-links,
-.copy {
-  margin-left: 225px;
+.contact-links {
+  margin-left: 270px;
 }
 
 /* HOVER */
-
-.logo:hover {
-  background-color: #000;
-  /* background-image: url(); */
-}
 
 .nav-link:hover {
   border-left: .1em solid #00f;
