@@ -3,53 +3,61 @@
 }
 
 body {
-  margin: 0;
+  margin: 1em 0 0 0;
 
-  font-family: 'Gotham Pro', 'Helvetica', 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
+  color: #B9B9B9;
+  background-color: #000;
+
+  /* border: 1px solid red; */
 }
 
 .container {
   display: flex;
   flex-flow: column;
   
-  margin: 3em 5em 0 5em;
+  max-width: 1280px;
+  
+  margin: 0 auto;
+
+  /* border: 1px solid yellow; */
 }
 
 /* === HEADER === */
 
 header {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-evenly;
+  align-self: center;
   position: fixed;
-  width: calc(100% - 6.65em);
+
+  width: 100%;
   
   font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
-  
-  /* border: 1px solid red; */
+
+  /* border: 1px solid white; */
 }
 
 a {
   text-decoration: none;
-  color: black;
-  
-  /* border: 1px solid red; */
+
+  color: #B9B9B9;
 }
 
 .work-number {
-  margin: 0;
+  margin: 0 2em 0 1em;
+}
 
-  /* font-weight: 500; */
+.about {
+  margin: 0 2em 0 0;
 }
 
 .work-list {
-  margin: 0;
+  margin: 0 2em 0 0;
   padding: 0;
-
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #cc2626; */
   
   /* border: 1px solid red; */
 }
@@ -76,15 +84,17 @@ li {
   
   font-size: .85em;
   font-weight: 400;
-
   text-transform: none;
+
+  /* border: 1px solid red; */
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
-  
-  border: 1px solid red;
+  margin-right: 1em;
+
+  max-width: 75px;
+
+  /* border: 1px solid red; */
 }
 
 /* === CONTENT === */
@@ -98,15 +108,17 @@ main {
 section {
   display: flex;
   flex-flow: column;
+  /* align-items: center; */
+
+  /* border: 1px solid red; */
 }
 
 .project-title {
-  /* display: flex; */
+  align-self: flex-start;
 
   margin: 2em 0 0 0;
   
   font-size: 12em;
-  
   line-height: .8em;
 
   color: #79C000;
@@ -115,30 +127,33 @@ section {
 }
 
 span {
+  font-weight: 500;
+
   color: #cc2626;
 }
 
 .project-description {
-  width: 20em;
+  align-self: center;
+  
+  max-width: 45em;
 
   margin: 3.5em 0 7em 0em;
 
   font-size: 1.3em;
-
   text-indent: 1em;
 }
 
 .subtitle {
   font-weight: 500;
 
-  color: #000;
+  color: #B9B9B9;
 }
 
 .project-presentation {
   display: flex;
   justify-content: flex-end;
 
-  margin-bottom: 5em;
+  margin: 7.5em 0 10em 0;
 }
 
 h2 {
@@ -151,16 +166,15 @@ h2 {
 }
 
 .position-image {
-  /* display: flex;
+  display: flex;
   flex-flow: column;
-  align-items: flex-end; */
+  align-items: flex-end;
+
+  /* border: 1px solid red; */
 }
 
 .project-image {
-  width: 40em;
-  height: 40em;
-
-  /* border: 1px solid red; */
+  max-width: 45vw;
 }
 
 .caption {
@@ -170,20 +184,17 @@ h2 {
 }
 
 .next {
-  align-self: flex-end;
+  align-self: center;
 
   margin-top: 1em;
 
   font-size: 2em;
   font-weight: 500;
-
   text-transform: uppercase;
-
-  /* border: 1px solid red; */
 }
 
 .new {
-  color: #000;
+  color: #0000FF;
 }
 
 /* === FOOTER === */
@@ -191,11 +202,11 @@ h2 {
 footer {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-self: center;
   
-  margin: 5em 10em 0 10em;
+  margin: 5em 0 0 0;
 
-  /* border: 1px solid red; */
+  /* border: 1px solid green; */
 }
 
 .copy {
@@ -203,20 +214,79 @@ footer {
 
   font-size: 1.25em;
   font-weight: 100;
+  text-align: center;
 }
 
 /* === HOVER === */
 
 a:hover {
   text-decoration: line-through;
+
+  color: #B9B9B9;
 }
 
-.new:hover {
-  text-decoration: line-through;
-  
-  color: blue;
-
+.selected:hover {
+  color: #cc2626;
 }
 
 /* === MEDIA === */
 
+@media (min-width: 2560px) {
+  header {
+    width: 80%;
+  }
+
+  .project-image {
+    max-width: 30vw;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .container {
+    font-size: 90%
+  }
+
+  .project-presentation {
+    justify-content: flex-end;
+  }
+
+  h2 {
+    margin-right: 1.5em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  h2 {
+    margin-right: 0;
+
+    font-size: 2em;
+  }
+
+  .project-image {
+    max-width: 55vw;
+  }
+
+  .next {
+    max-width: 15em;
+
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 425px) {
+  header {
+
+  }
+
+  .work-number {
+    display: none;
+  }
+
+  .copy {
+    font-size: 1em;
+  }
+
+}
