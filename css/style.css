@@ -55,6 +55,7 @@ a {
 }
 
 .selected {
+  font-weight: bold;
   text-decoration: line-through;
 
   color: #CC2626;
@@ -105,6 +106,12 @@ section {
   line-height: .8em;
 }
 
+.one-title {
+  margin-top: .5em;
+
+  font-weight: 600;
+}
+
 .fork {
   color: #79C000;
 }
@@ -127,6 +134,11 @@ section {
 
 .info {
   color: #CC2626
+}
+
+.info-link {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 span {
@@ -159,6 +171,19 @@ span {
   margin: 7.5em 0 10em 0;
 }
 
+.info-text {
+  flex-flow: column;
+  align-self: center;
+  margin-bottom: 0;
+
+  max-width: 43em;
+}
+
+.info-paragraph {
+  margin-top: 7em;
+  margin-bottom: 3.5em;
+}
+
 h2 {
   font-size: 3em;
   font-weight: 500;
@@ -176,6 +201,18 @@ h2 {
   max-width: 45vw;
 }
 
+.info-photo {
+  align-self: center;
+  
+  width: 45vw;
+  height: 45vw;
+
+  background-image: url(/davideguerrero.github.io/images/logo/david_encalada_photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .caption {
   margin: 0;
   
@@ -190,6 +227,10 @@ h2 {
   font-size: 2em;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.go-to {
+  margin-top: 6em;
 }
 
 /* === FOOTER === */
@@ -222,6 +263,10 @@ a:hover {
   color: #CC2626;
 }
 
+.info-photo:hover {
+  background-image: url(/davideguerrero.github.io/images/logo/david_encalada_photo-hover.png);
+}
+
 /* === MEDIA === */
 
 @media (min-width: 2560px) {
@@ -231,6 +276,10 @@ a:hover {
 
   .project-image {
     max-width: 30vw;
+  }
+
+  .info-photo {
+    max-height: 30vw;
   }
 
 }
@@ -271,6 +320,24 @@ a:hover {
     text-align: center;
   }
 
+  .one-ultralight {
+    margin-top: 2.65em;
+
+    font-size: 8.6em;
+  }
+
+  .one-oakley {
+    margin-top: 2.65em;
+
+    font-size: 10em;
+  }
+
+  .one-swissted {
+    margin-top: 2.65em;
+
+    font-size: 7.9em;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -307,12 +374,12 @@ a:hover {
     font-size: 8.85em;
   }
 
-  .project-title {
-    align-self: flex-start;
+  .one-title {
+    margin-top: .5em;
+  }
 
-    margin-top: 2.5em;
-
-    font-size: 8.85em;
+  .one-about {
+    font-size: 7.85em;
   }
 
   .project-description {
@@ -354,6 +421,37 @@ a:hover {
 
   .copy {
     font-size: 1em;
+  }
+
+  .one-ultralight {
+    margin-top: 5em;
+
+    font-size: 4.25em;
+  }
+
+  .one-fendi {
+    margin-top: 3.25em;
+
+    font-size: 6.55em;
+  }
+
+  .one-oakley {
+    margin-top: 4.5em;
+
+    font-size: 5em;
+  }
+
+  .one-swissted {
+    margin-top: 5.75em;
+
+    font-size: 3.85em;
+  }
+
+  .info-photo {
+    max-width: 100vw;
+    
+    width: 275px;
+    height: 275px;
   }
 
 }
