@@ -152,7 +152,7 @@ span {
 
   max-width: 45em;
 
-  margin: 3.5em 0 7em 0em;
+  margin: 6.5em 0 7em 0em;
 
   font-size: 1.3em;
   text-indent: 1em;
@@ -209,14 +209,17 @@ h2 {
 
   background-image: url(/images/logo/david_encalada_photo.png);
   background-size: cover;
-  /* background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .caption {
   margin: 0;
   
   font-size: 1.25em;
+}
+
+.next-container {
+  display: flex;
+  justify-content: center;
 }
 
 .next {
