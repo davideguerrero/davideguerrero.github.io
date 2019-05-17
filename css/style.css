@@ -133,7 +133,7 @@ section {
 }
 
 .color-about {
-  color: #CC2626
+  color: #CC2626;
 }
 
 .info-link {
@@ -207,7 +207,7 @@ h2 {
   width: 45vw;
   height: 45vw;
 
-  background-image: url(/davideguerrero.github.io/images/logo/david_encalada_photo.png);
+  background-image: url(/davideguerrero.github.io/images/about/david_encalada_photo.png);
   background-size: cover;
 }
 
@@ -267,7 +267,7 @@ a:hover {
 }
 
 .info-photo:hover {
-  background-image: url(/davideguerrero.github.io/images/logo/david_encalada_photo-hover.png);
+  background-image: url(/davideguerrero.github.io/images/about/david_encalada_photo-hover.png);
 }
 
 /* === MEDIA === */
